@@ -1,0 +1,7 @@
+streamlit
+streamlit-echarts
+requests
+jieba
+wordcloud
+beautifulsoup4
+opencv-python-headless
