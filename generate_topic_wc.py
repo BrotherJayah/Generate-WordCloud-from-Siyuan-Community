@@ -4,9 +4,9 @@ import webbrowser
 import topic_requester  # 修改后的文档1
 import wordcloudgenerate
 
-projroute = '/Users/andy/Project/WordCloud/result'
+projroute = '.'
 topic_id = ''  # 替换为目标帖子ID
-mask_path = '/Users/andy/Project/WordCloud/shuiyuanwordcloud/SJTUSMC.png'
+mask_path = '.'
 
 # 创建专用目录
 output_dir = f'{projroute}/topic_{topic_id}'
@@ -32,7 +32,7 @@ wordcloudgenerate.wc(
     identifier=f'topic_{topic_id}',  # 修改标识符
     path=data_path,
     mask_path=mask_path,
-    stopword_path='/Users/andy/Project/WordCloud/shuiyuanwordcloud/baidu_stopwords.txt',
+    stopword_path='baidu_stopwords.txt',
     output_dir=output_dir
 )
 
