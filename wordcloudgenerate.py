@@ -103,7 +103,7 @@ def wc(identifier, path='word.json', output_dir='.', mask_path=None, stopword_pa
 
     # 准备词云参数
     mask = preprocess_mask(mask_path) if mask_path else None
-    font_path = '/Users/andy/Project/WordCloud/shuiyuanwordcloud/font.ttf'
+    font_path = 'font.ttf'
     wc = WordCloud(
         font_path=font_path,
         width=800,
