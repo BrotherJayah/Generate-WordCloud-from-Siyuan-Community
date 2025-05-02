@@ -1,7 +1,7 @@
 import os
 import shutil
 import webbrowser
-import topic_requester  # 修改后的文档1
+import topic_requester 
 import wordcloudgenerate
 
 projroute = '.'
