@@ -103,9 +103,8 @@ def wc(identifier, path='word.json', output_dir='.', mask_path=None, stopword_pa
 
     # 准备词云参数
     mask = preprocess_mask(mask_path) if mask_path else None
-    font_path = os.path.join(os.path.dirname(__file__), 'font.ttf')
-    if not os.path.exists(font_path):
-        raise RuntimeError(f\"字体文件不存在，请检查 {font_path}\")
+    font_path = 'font.ttf'
+
     wc = WordCloud(
         font_path=font_path,
         width=800,
